@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Devices>
+    <Device id="first">
+        <Name>CPU</Name>
+        <Origin>USA</Origin>
+        <Price>5000</Price>
+        <Type Peripheral="true" PowerConsumption="95" Cooler="true" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+                <Port>COM</Port>
+            </Ports>
+        </Type>
+        <Critical>true</Critical>
+        <Timestamp>May 22, 2023, 12:30:45 PM</Timestamp>
+    </Device>
+    <Device id="second">
+        <Name>RAM</Name>
+        <Origin>Japan</Origin>
+        <Price>1500</Price>
+        <Type Peripheral="false" PowerConsumption="10" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:31:15 PM</Timestamp>
+    </Device>
+    <Device id="third">
+        <Name>HDD</Name>
+        <Origin>China</Origin>
+        <Price>1000</Price>
+        <Type Peripheral="false" PowerConsumption="8" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>true</Critical>
+        <Timestamp>May 22, 2023, 12:32:05 PM</Timestamp>
+    </Device>
+    <Device id="fourth">
+        <Name>Motherboard</Name>
+        <Origin>Taiwan</Origin>
+        <Price>3000</Price>
+        <Type Peripheral="false" PowerConsumption="15" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+                <Port>COM</Port>
+            </Ports>
+        </Type>
+        <Critical>true</Critical>
+        <Timestamp>May 22, 2023, 12:33:20 PM</Timestamp>
+    </Device>
+    <Device id="fifth">
+        <Name>GPU</Name>
+        <Origin>USA</Origin>
+        <Price>4000</Price>
+        <Type Peripheral="true" PowerConsumption="150" Cooler="true" ComponentGroup="Multimedia">
+            <Ports>
+                <Port>USB</Port>
+                <Port>HDMI</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:34:10 PM</Timestamp>
+    </Device>
+    <Device id="sixth">
+        <Name>Power Supply</Name>
+        <Origin>Germany</Origin>
+        <Price>800</Price>
+        <Type Peripheral="false" PowerConsumption="0" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>COM</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:35:05 PM</Timestamp>
+    </Device>
+    <Device id="seventh">
+        <Name>Case</Name>
+        <Origin>Korea</Origin>
+        <Price>500</Price>
+        <Type Peripheral="false" PowerConsumption="0" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:36:35 PM</Timestamp>
+    </Device>
+    <Device id="eighth">
+        <Name>Cooling System</Name>
+        <Origin>USA</Origin>
+        <Price>200</Price>
+        <Type Peripheral="false" PowerConsumption="20" Cooler="true" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:37:50 PM</Timestamp>
+    </Device>
+    <Device id="ninth">
+        <Name>Sound Card</Name>
+        <Origin>Germany</Origin>
+        <Price>300</Price>
+        <Type Peripheral="false" PowerConsumption="5" Cooler="false" ComponentGroup="Multimedia">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:38:25 PM</Timestamp>
+    </Device>
+    <Device id="tenth">
+        <Name>Network Card</Name>
+        <Origin>Taiwan</Origin>
+        <Price>100</Price>
+        <Type Peripheral="true" PowerConsumption="5" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+                <Port>LAN</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:39:15 PM</Timestamp>
+    </Device>
+    <Device id="eleventh">
+        <Name>Keyboard</Name>
+        <Origin>China</Origin>
+        <Price>50</Price>
+        <Type Peripheral="true" PowerConsumption="2" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:40:40 PM</Timestamp>
+    </Device>
+    <Device id="twelfth">
+        <Name>Mouse</Name>
+        <Origin>Japan</Origin>
+        <Price>30</Price>
+        <Type Peripheral="true" PowerConsumption="1" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:41:55 PM</Timestamp>
+    </Device>
+    <Device id="thirteenth">
+        <Name>Monitor</Name>
+        <Origin>USA</Origin>
+        <Price>2000</Price>
+        <Type Peripheral="true" PowerConsumption="50" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>HDMI</Port>
+                <Port>DisplayPort</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:42:45 PM</Timestamp>
+    </Device>
+    <Device id="fourteenth">
+        <Name>Printer</Name>
+        <Origin>Germany</Origin>
+        <Price>500</Price>
+        <Type Peripheral="true" PowerConsumption="20" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+                <Port>LPT</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:43:35 PM</Timestamp>
+    </Device>
+    <Device id="fifteenth">
+        <Name>Scanner</Name>
+        <Origin>China</Origin>
+        <Price>400</Price>
+        <Type Peripheral="true" PowerConsumption="15" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:44:10 PM</Timestamp>
+    </Device>
+    <Device id="sixteenth">
+        <Name>Card Reader</Name>
+        <Origin>China</Origin>
+        <Price>20</Price>
+        <Type Peripheral="true" PowerConsumption="2" Cooler="false" ComponentGroup="Input/Output Devices">
+            <Ports>
+                <Port>USB</Port>
+            </Ports>
+        </Type>
+        <Critical>false</Critical>
+        <Timestamp>May 22, 2023, 12:45:10 PM</Timestamp>
+    </Device>
+</Devices>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+    <element name="Devices">
+        <complexType>
+            <sequence>
+                <element name="Device" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="Name" type="string"/>
+                            <element name="Origin" type="string"/>
+                            <element name="Price" type="decimal"/>
+                            <element name="Type">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Ports">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="Port">
+                                                        <simpleType>
+                                                            <restriction base="string">
+                                                                <enumeration value="COM"/>
+                                                                <enumeration value="USB"/>
+                                                                <enumeration value="LPT"/>
+                                                            </restriction>
+                                                        </simpleType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                    <attribute name="Peripheral" type="boolean" use="required"/>
+                                    <attribute name="PowerConsumption" type="integer" use="required"/>
+                                    <attribute name="Cooler">
+                                        <simpleType>
+                                            <restriction base="boolean">
+                                                <enumeration value="true"/>
+                                                <enumeration value="false"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="ComponentGroup" type="string" use="optional">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <enumeration value="Input/Output Devices"/>
+                                                <enumeration value="Multimedia"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                </complexType>
+                            </element>
+                            <element name="Critical" type="boolean"/>
+                            <element name="Timestamp" type="string"/>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
