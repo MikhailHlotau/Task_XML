@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Devices">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Device" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Origin" type="xs:string"/>
+                            <xs:element name="Price" type="xs:decimal"/>
+                            <xs:element name="Type">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ports">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Port" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="Peripheral" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="PowerConsumption" type="xs:integer" use="required"/>
+                                    <xs:attribute name="Cooler" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="ComponentGroup" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Critical" type="xs:boolean"/>
+                            <xs:element name="Timestamp" type="xs:dateTime"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+
+
+
