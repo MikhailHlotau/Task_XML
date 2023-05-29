@@ -1,13 +1,10 @@
 package com.glotov.xml.entity;
 
 import java.util.Objects;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
-@XmlRootElement(name = "Device")
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {"id", "name", "origin", "price", "type", "isCritical"})
 public class Device {
     @XmlElement(name = "id")
     private String id;
@@ -21,6 +18,9 @@ public class Device {
     @XmlElement(name = "Price")
     private double price;
 
+    @XmlElement(name = "Type")
+    private Type type;
+
     @XmlElement(name = "Critical")
     private boolean isCritical;
 
@@ -32,6 +32,7 @@ public class Device {
         this.name = builder.name;
         this.origin = builder.origin;
         this.price = builder.price;
+        this.type = builder.type;
         this.isCritical = builder.isCritical;
     }
 
@@ -50,6 +51,9 @@ public class Device {
     public double getPrice() {
         return price;
     }
+    public Type getType() {
+        return type;
+    }
 
     public boolean isCritical() {
         return isCritical;
@@ -60,12 +64,12 @@ public class Device {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Device device = (Device) o;
-        return Double.compare(device.price, price) == 0 && isCritical == device.isCritical && Objects.equals(id, device.id) && Objects.equals(name, device.name) && Objects.equals(origin, device.origin);
+        return Double.compare(device.price, price) == 0 && isCritical == device.isCritical && Objects.equals(id, device.id) && Objects.equals(name, device.name) && Objects.equals(origin, device.origin) && Objects.equals(type, device.type);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, origin, price, isCritical);
+        return Objects.hash(id, name, origin, price, type, isCritical);
     }
 
     @Override
@@ -75,6 +79,7 @@ public class Device {
                 ", name='" + name + '\'' +
                 ", origin='" + origin + '\'' +
                 ", price=" + price +
+                ", type=" + type +
                 ", isCritical=" + isCritical +
                 '}';
     }
@@ -84,6 +89,7 @@ public class Device {
         private String name;
         private String origin;
         private double price;
+        private Type type;
         private boolean isCritical;
 
         public Builder setId(String id) {
@@ -106,6 +112,11 @@ public class Device {
             return this;
         }
 
+        public Builder setType(Type type) {
+            this.type = type;
+            return this;
+        }
+
         public Builder setCritical(boolean isCritical) {
             this.isCritical = isCritical;
             return this;
@@ -114,6 +125,7 @@ public class Device {
         public Device build() {
             return new Device(this);
         }
+
     }
 }
 

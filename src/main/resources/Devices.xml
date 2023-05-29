@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Devices>
-    <Device id="first">
+    <Device>
+        <id>first</id>
         <Name>CPU</Name>
         <Origin>USA</Origin>
         <Price>5000</Price>
@@ -13,7 +14,8 @@
         <Critical>true</Critical>
         <Timestamp>May 22, 2023, 12:30:45 PM</Timestamp>
     </Device>
-    <Device id="second">
+    <Device>
+        <id>second</id>
         <Name>RAM</Name>
         <Origin>Japan</Origin>
         <Price>1500</Price>
@@ -25,7 +27,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:31:15 PM</Timestamp>
     </Device>
-    <Device id="third">
+    <Device>
+        <id>third</id>
         <Name>HDD</Name>
         <Origin>China</Origin>
         <Price>1000</Price>
@@ -37,7 +40,8 @@
         <Critical>true</Critical>
         <Timestamp>May 22, 2023, 12:32:05 PM</Timestamp>
     </Device>
-    <Device id="fourth">
+    <Device>
+        <id>fourth</id>
         <Name>Motherboard</Name>
         <Origin>Taiwan</Origin>
         <Price>3000</Price>
@@ -50,7 +54,8 @@
         <Critical>true</Critical>
         <Timestamp>May 22, 2023, 12:33:20 PM</Timestamp>
     </Device>
-    <Device id="fifth">
+    <Device>
+        <id>fifth</id>
         <Name>GPU</Name>
         <Origin>USA</Origin>
         <Price>4000</Price>
@@ -63,7 +68,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:34:10 PM</Timestamp>
     </Device>
-    <Device id="sixth">
+    <Device>
+        <id>sixth</id>
         <Name>Power Supply</Name>
         <Origin>Germany</Origin>
         <Price>800</Price>
@@ -75,7 +81,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:35:05 PM</Timestamp>
     </Device>
-    <Device id="seventh">
+    <Device>
+        <id>seventh</id>
         <Name>Case</Name>
         <Origin>Korea</Origin>
         <Price>500</Price>
@@ -87,7 +94,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:36:35 PM</Timestamp>
     </Device>
-    <Device id="eighth">
+    <Device>
+        <id>eighth</id>
         <Name>Cooling System</Name>
         <Origin>USA</Origin>
         <Price>200</Price>
@@ -99,7 +107,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:37:50 PM</Timestamp>
     </Device>
-    <Device id="ninth">
+    <Device>
+        <id>ninth</id>
         <Name>Sound Card</Name>
         <Origin>Germany</Origin>
         <Price>300</Price>
@@ -111,7 +120,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:38:25 PM</Timestamp>
     </Device>
-    <Device id="tenth">
+    <Device>
+        <id>tenth</id>
         <Name>Network Card</Name>
         <Origin>Taiwan</Origin>
         <Price>100</Price>
@@ -124,7 +134,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:39:15 PM</Timestamp>
     </Device>
-    <Device id="eleventh">
+    <Device>
+        <id>eleventh</id>
         <Name>Keyboard</Name>
         <Origin>China</Origin>
         <Price>50</Price>
@@ -136,7 +147,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:40:40 PM</Timestamp>
     </Device>
-    <Device id="twelfth">
+    <Device>
+        <id>twelfth</id>
         <Name>Mouse</Name>
         <Origin>Japan</Origin>
         <Price>30</Price>
@@ -148,7 +160,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:41:55 PM</Timestamp>
     </Device>
-    <Device id="thirteenth">
+    <Device>
+        <id>thirteenth</id>
         <Name>Monitor</Name>
         <Origin>USA</Origin>
         <Price>2000</Price>
@@ -161,7 +174,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:42:45 PM</Timestamp>
     </Device>
-    <Device id="fourteenth">
+    <Device>
+        <id>fourteenth</id>
         <Name>Printer</Name>
         <Origin>Germany</Origin>
         <Price>500</Price>
@@ -174,7 +188,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:43:35 PM</Timestamp>
     </Device>
-    <Device id="fifteenth">
+    <Device>
+        <id>fifteenth</id>
         <Name>Scanner</Name>
         <Origin>China</Origin>
         <Price>400</Price>
@@ -186,7 +201,8 @@
         <Critical>false</Critical>
         <Timestamp>May 22, 2023, 12:44:10 PM</Timestamp>
     </Device>
-    <Device id="sixteenth">
+    <Device>
+        <id>sixteenth</id>
         <Name>Card Reader</Name>
         <Origin>China</Origin>
         <Price>20</Price>
