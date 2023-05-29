@@ -1,13 +1,31 @@
 package com.glotov.xml.entity;
 
 import java.util.Objects;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement(name = "Device")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Device {
+    @XmlElement(name = "id")
     private String id;
+
+    @XmlElement(name = "Name")
     private String name;
+
+    @XmlElement(name = "Origin")
     private String origin;
+
+    @XmlElement(name = "Price")
     private double price;
+
+    @XmlElement(name = "Critical")
     private boolean isCritical;
+
+    public Device() {
+    }
 
     private Device(Builder builder) {
         this.id = builder.id;
@@ -98,3 +116,4 @@ public class Device {
         }
     }
 }
+

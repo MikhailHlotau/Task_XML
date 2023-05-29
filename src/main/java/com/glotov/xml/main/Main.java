@@ -10,6 +10,7 @@ public class Main {
             XmlParser parserDom = XmlParserFactory.createDomXmlParser();
             XmlParser parserSax = XmlParserFactory.createSaxXmlParser();
             XmlParser parserStax = XmlParserFactory.createStaxXmlParser();
+            XmlParser parserJaxb = XmlParserFactory.createJaxbXmlParser();
 
             // Выполнение парсинга
             System.out.println("////DOM////");
@@ -23,6 +24,10 @@ public class Main {
             System.out.println("////STAX////");
             System.out.println();
             parserStax.parseXml("src/main/resources/Devices.xml");
+
+            System.out.println("////JAXB////");
+            System.out.println();
+            parserJaxb.parseXml("src/main/resources/Devices.xml");
 
         } catch (Exception e) {
             e.printStackTrace();
