@@ -15,7 +15,7 @@ public class SaxXmlParser extends DefaultHandler implements XmlParser {
     private StringBuilder elementValue;
     private String currentElement;
     private Device.Builder deviceBuilder;
-    private List<Device> devices = new ArrayList<>();
+
     @Override
     public void parseXml(String filePath) {
         try {
